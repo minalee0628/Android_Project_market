@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/signup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="68dp"
+        android:text="새로운 계정 생성"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_email_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_email_signup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:hint="email을 입력해주세요"
+        android:inputType="textEmailAddress"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_password_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_title" />
+
+    <EditText
+        android:id="@+id/editText_password_signup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="비밀번호를 입력해주세요"
+        android:inputType="textPassword"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_name_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email_signup" />
+
+    <EditText
+        android:id="@+id/editText_name_signup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="이름을 입력해주세요"
+        android:inputType="text"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_birth_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_password_signup" />
+
+    <EditText
+        android:id="@+id/editText_birth_signup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="생년월일을 입력해주세요(' - '빼고 입력)"
+        android:inputType="date"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_signup_goback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_name_signup" />
+
+    <Button
+        android:id="@+id/btn_signup_ok"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="27dp"
+        android:text="계정 생성하기"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_signup_goback"
+        app:layout_constraintEnd_toStartOf="@+id/btn_signup_goback"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_signup_goback"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="169dp"
+        android:text="뒤로가기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_signup_ok"
+        app:layout_constraintTop_toBottomOf="@+id/editText_birth_signup" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/TextArticleTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="판매 글 상세" />
+
+    <TextView
+        android:id="@+id/TextArticleTitle"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="19dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textIdTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <TextView
+        android:id="@+id/TextArticlePrice"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="13dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/TextArticleContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textpriceTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textIdTitle" />
+
+    <TextView
+        android:id="@+id/TextArticleContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/TextArticleSellOrNot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textpriceTitle" />
+
+    <TextView
+        android:id="@+id/TextArticleSellOrNot"
+        android:layout_width="113dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="86dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TextArticleContent"
+        app:layout_constraintTop_toBottomOf="@+id/TextArticleContent" />
+
+    <TextView
+        android:id="@+id/textSellerID"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="60dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/TextArticleContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textIdTitle"
+        app:layout_constraintTop_toTopOf="@+id/TextArticleTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textIdTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="24dp"
+        android:text="판매자ID : "
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textpriceTitle"
+        app:layout_constraintEnd_toStartOf="@+id/textSellerID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextArticleTitle" />
+
+    <TextView
+        android:id="@+id/textpriceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="23dp"
+        android:text="가격 : "
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/TextArticleContent"
+        app:layout_constraintEnd_toStartOf="@+id/TextArticlePrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textIdTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
